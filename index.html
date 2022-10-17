@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Quest</title>
+  </head>
+  <body>
+    
+    <nav id="navbar-page">
+        <div id="logo-oficial">
+          <p id="logo-text">INBUILD</p>
+          <!-- <img src="./assets/Logo-example.png" alt="Logo Oficial Empresa" /> -->
+        </div>
+        <ul
+          id="options-nav"
+          class="nav justify-content-center align-content-center"
+        >
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle text-primary"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                HOME
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle text-secondary"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                PAGES
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle text-secondary"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                BLOGS
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Example1</a>
+                <a class="dropdown-item" href="#">Example2</a>
+                <a class="dropdown-item" href="#">Example3</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle text-secondary"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                PORTAFOLIO
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Example1</a>
+                <a class="dropdown-item" href="#">Example2</a>
+                <a class="dropdown-item" href="#">Example3</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle text-secondary"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                ELEMENT
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Example1</a>
+                <a class="dropdown-item" href="#">Example2</a>
+                <a class="dropdown-item" href="#">Example3</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle text-secondary"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                DEMO
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Example1</a>
+                <a class="dropdown-item" href="#">Example2</a>
+                <a class="dropdown-item" href="#">Example3</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" id="search-button">
+            <?xml version="1.0" ?><svg
+              height="28px"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="28px"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title />
+              <desc />
+              <defs />
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+              >
+                <g fill="#929292" id="icon-111-search">
+                  <path
+                    d="M19.4271164,20.4271164 C18.0372495,21.4174803 16.3366522,22 14.5,22 C9.80557939,22 6,18.1944206 6,13.5 C6,8.80557939 9.80557939,5 14.5,5 C19.1944206,5 23,8.80557939 23,13.5 C23,15.8472103 22.0486052,17.9722103 20.5104077,19.5104077 L26.5077736,25.5077736 C26.782828,25.782828 26.7761424,26.2238576 26.5,26.5 C26.2219324,26.7780676 25.7796227,26.7796227 25.5077736,26.5077736 L19.4271164,20.4271164 L19.4271164,20.4271164 Z M14.5,21 C18.6421358,21 22,17.6421358 22,13.5 C22,9.35786417 18.6421358,6 14.5,6 C10.3578642,6 7,9.35786417 7,13.5 C7,17.6421358 10.3578642,21 14.5,21 L14.5,21 Z"
+                    id="search"
+                  />
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="nav-item" id="button-buy">
+            <button>Buy Now!</button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="o-banner">
+        
+        <div class="o-inner-info">
+            <p>WELCOME TO INBUILD</p>
+            <p id="contained">GLOBAL STANDARD</p>
+            <p>BUILD THE UNIQUE STANDARDS</p>
+        </div>
+        <div class="o-overlay"></div>
+      </div>
+
+      <div class="o-anim-section">
+        <div class="o-container reveal">
+          <div class="o-img-container">
+            <img src="./src/work.jpeg" alt="Work">
+          </div>
+          <div class="o-info-container">
+            <h2>
+              With all package services
+            </h2>
+            <p>Lorem Ipsum solor sit amet, consectetur adipisicing will be distracted by readable content of a page when looking at its layout it has a normal letters ...</p>
+            <button class="o-btn">
+              read more
+            </button>
+          </div>
+        </div>
+
+        <div class="o-container reveal reversed">
+          <div class="o-img-container outlined">
+            <img src="./src/work2.jpg" alt="Work">
+          </div>
+          <div class="o-info-container">
+            <h2>
+              With all package services
+            </h2>
+            <p>Lorem Ipsum solor sit amet, consectetur adipisicing will be distracted by readable content of a page when looking at its layout it has a normal letters ...</p>
+            <button class="o-btn">
+              read more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-services-section">
+        <div class="o-description">
+          <h2>Our great service</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has benn the industry's standart dummy text ever since the 1500s, when an unknow printer took a galley of type and scrambled it to make ...</p>
+        </div>
+
+        <div class="o-services">
+          <div class="o-services-container slide-anim">
+          <div class="o-service-item">
+            <div class="o-icon">
+              <svg xmlns="http://www.w3.org/2000/svg"fill="#48acbd"
+            height="20px"
+            width="20px" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"/></svg>
+            </div>
+            <h2>Unique</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing will be distracted by the readable content ...</p>
+            <a href="#">READ MORE</a>
+          </div>
+
+          <div class="o-service-item">
+            <div class="o-icon">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#48acbd"
+                  height="20px"
+                  width="20px"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM384 96H256V224H384V96zM384 288H256V416H384V288zM192 224V96H64V224H192zM64 416H192V288H64V416z"
+                  />
+                </svg>
+            </div>
+            <h2>Responsive</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing will be distracted by the readable content ...</p>
+            <a href="#">READ MORE</a>
+          </div>
+
+          <div class="o-service-item">
+            <div class="o-icon">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#48acbd"
+                  height="20px"
+                  width="20px"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M240.5 224H352C365.3 224 377.3 232.3 381.1 244.7C386.6 257.2 383.1 271.3 373.1 280.1L117.1 504.1C105.8 513.9 89.27 514.7 77.19 505.9C65.1 497.1 60.7 481.1 66.59 467.4L143.5 288H31.1C18.67 288 6.733 279.7 2.044 267.3C-2.645 254.8 .8944 240.7 10.93 231.9L266.9 7.918C278.2-1.92 294.7-2.669 306.8 6.114C318.9 14.9 323.3 30.87 317.4 44.61L240.5 224z"
+                  />
+                </svg>
+            </div>
+            <h2>Technology</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing will be distracted by the readable content ...</p>
+            <a href="#">READ MORE</a>
+          </div>
+        </div>
+
+
+        <div class="o-services-container slide slide-anim">
+          <div class="o-service-item">
+            <div class="o-icon">
+              <svg xmlns="http://www.w3.org/2000/svg"fill="#48acbd"
+            height="20px"
+            width="20px" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"/></svg>
+            </div>
+            <h2>Unique2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing will be distracted by the readable content ...</p>
+            <a href="#">READ MORE</a>
+          </div>
+
+          <div class="o-service-item">
+            <div class="o-icon">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#48acbd"
+                  height="20px"
+                  width="20px"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM384 96H256V224H384V96zM384 288H256V416H384V288zM192 224V96H64V224H192zM64 416H192V288H64V416z"
+                  />
+                </svg>
+            </div>
+            <h2>Responsive2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing will be distracted by the readable content ...</p>
+            <a href="#">READ MORE</a>
+          </div>
+
+          <div class="o-service-item">
+            <div class="o-icon">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#48acbd"
+                  height="20px"
+                  width="20px"
+                  viewBox="0 0 384 512"
+                >
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M240.5 224H352C365.3 224 377.3 232.3 381.1 244.7C386.6 257.2 383.1 271.3 373.1 280.1L117.1 504.1C105.8 513.9 89.27 514.7 77.19 505.9C65.1 497.1 60.7 481.1 66.59 467.4L143.5 288H31.1C18.67 288 6.733 279.7 2.044 267.3C-2.645 254.8 .8944 240.7 10.93 231.9L266.9 7.918C278.2-1.92 294.7-2.669 306.8 6.114C318.9 14.9 323.3 30.87 317.4 44.61L240.5 224z"
+                  />
+                </svg>
+            </div>
+            <h2>Technology2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing will be distracted by the readable content ...</p>
+            <a href="#">READ MORE</a>
+          </div>
+        </div>
+        <div class="o-pagination">
+          <div class="o-dot" onclick="currentSlide(1)"></div>
+          <div class="o-dot" onclick="currentSlide(2)"></div>
+        </div>
+
+      </div>
+      
+      
+      </div>
+
+      <div class="o-parallax-section">
+        <p>STRONG FOUNDATION</p>
+        <h2>Working process with our latest projects</h2>
+      </div>
+
+      <div class="o-projects-section">
+        <div class="o-projects-title">
+          <h2>Branding Projects</h2>
+          <p>Loremp ipsum dolor sit amet, consectetur adipisicing will be distracted by the readable content ...</p>
+        </div>
+        <div class="o-projects-container">
+          <div class="o-card">
+            <img src="./src/watchApple.png" alt="Apple watch">
+            <p>Watches</p>
+            <h2>Apple Watch</h2>
+          </div>
+          <div class="o-card">
+            <img src="./src/watchApple.png" alt="Apple watch">
+            <p>Watches</p>
+            <h2>Apple Watch</h2>
+          </div>
+          <div class="o-card">
+            <img src="./src/watchApple.png" alt="Apple watch">
+            <p>Watches</p>
+            <h2>Apple Watch</h2>
+          </div>
+          <div class="o-card">
+            <img src="./src/watchApple.png" alt="Apple watch">
+            <p>Watches</p>
+            <h2>Apple Watch</h2>
+          </div>
+          <div class="o-card">
+            <img src="./src/watchApple.png" alt="Apple watch">
+            <p>Watches</p>
+            <h2>Apple Watch</h2>
+          </div>
+          <div class="o-card">
+            <img src="./src/watchApple.png" alt="Apple watch">
+            <p>Watches</p>
+            <h2>Apple Watch</h2>
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <div class="o-news-section">
+        <div class="o-news-title">
+          <h2>Lastest News</h2>
+          <p>Loremp ipsum dolor sit amet, consectetur adipisicing will be distracted by the readable content ...</p>
+        </div>
+      <div class="o-news-container">
+        <div class="o-news">
+          <div class="o-news-overlay">
+          <div class="o-top-text">
+            <p>Events</p>
+            <p>18 October 2022</p>
+          </div>
+          <div class="o-middle-text">
+            <h2>Exclusive New product</h2>
+            <p>Loremp ipsum dolor sit amet, consectetur adipisicing ...</p>
+          </div>
+         </div>
+        </div>
+
+        <div class="o-news ">
+          <div class="o-news-overlay column-reverse centered">
+          
+          <div class="o-middle-text centered">
+            <h2>Exclusive New product</h2>
+            <p>Loremp ipsum dolor sit amet, consectetur adipisicing ...</p>
+          </div>
+         </div>
+        </div>
+
+        <div class="o-news">
+          <div class="o-news-overlay">
+          <div class="o-top-text">
+            <p>Programming</p>
+            <p>7 October 2022</p>
+          </div>
+          <div class="o-middle-text">
+            <h2>Content creation for team</h2>
+            <p>Loremp ipsum dolor sit amet, consectetur adipisicing ...</p>
+          </div>
+         </div>
+        </div>
+
+      
+      </div>  
+      </div>
+
+      <div class="o-footer">
+        <div class="o-top-footer">
+          <div class="o-brand">
+            <h2>INBUILD</h2>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa excepturi eius nihil quo animi in itaque.</br></br> libero quibusdam, aut rem voluptatum ad odio culpa repudiandae, ex eveniet? Velit assumenda ex veniam qui!</P>
+          </div>
+          <div class="o-links">
+            <p class="o-footer-title">USEFUL LINKS</p>
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Portfolio</a>
+            <a href="">Contact Us</a>
+          </div>
+
+          <div class="o-footer-contacts">
+            <p class="o-footer-title">OUR CONTACTS</p>
+            <div class="o-contact">
+              <div class="o-icon-square">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#9d9d9d" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+              </div>
+              <div class="o-contact-text">
+                <p>1023 California, US,</p>
+                <p>34/5 Leavenworth Street, US</p>
+              </div>
+            </div>
+
+            <div class="o-contact">
+              <div class="o-icon-square">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#9d9d9d" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+              </div>
+              <div class="o-contact-text">
+                <p>+1 246 776 3256</p>
+                <p>+1 246 776 3256</p>
+              </div>
+            </div>
+
+            <div class="o-contact">
+              <div class="o-icon-square">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#9d9d9d" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/></svg>
+              </div>
+              <div class="o-contact-text">
+                <p>Info@info.com</p>
+                <a href="https://edsson-cortes.netlify.app">Edsson-cortes.netlify.app</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="o-subscribe">
+            <p class="o-footer-title">SUBSCRIBE</p>
+
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="o-input-container">
+              <input type="text" placeholder="Enter your Email">
+              <div class="o-icon-input">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#ffffff" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L277.3 424.9l-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488V392c0-5.3 1.8-10.5 5.1-14.7L362.4 164.7c2.5-7.1-6.5-14.3-13-8.4L170.4 318.2l-32 28.9 0 0c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8 .8 302.2 .1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+              </div>
+            </div>
+
+            <div class="o-social">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10px" fill="#9d9d9d" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#9d9d9d" viewBox="0 0 488 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#9d9d9d" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#9d9d9d" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" fill="#9d9d9d" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+            </div>
+            
+          </div>
+        </div>
+        <div class="o-bottom">
+          <p>&copy; 2021 All Rights Reserved.</p>
+
+          <div class="o-policies">
+              <p>Privacy Policy</p>
+              <p>Terms of Use</p>
+              <p>Our Support</p>
+
+              <a href="#navbar-page"><svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#ffffff" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
